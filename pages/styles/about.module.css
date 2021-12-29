@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Forum&display=swap');
+
+.cloudCircle {
+  width: 900px;
+  height: 400px;
+  border-radius: 50%;
+  filter: url(#filter);
+  box-shadow: 400px 400px 60px 0px #fdf7f8;
+  position: fixed;
+  left: calc(50% - 850px);
+  top: calc(50% - 450px);
+}
+
+.container {
+  text-align: center;
+  position: fixed;
+  width: 800px;
+  left: 50%;
+  top: 50vh;
+  transform: translate(-50%, 0%);
+}
+
+.header {
+  font-family: 'Forum', cursive;
+  font-size: 3rem;
+}
+
+.bio {
+  font-family: 'Cardo', serif;
+  font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .cloudCircle {
+    width: 600px;
+    height: 400px;
+    box-shadow: 400px 400px 80px 0px #fdf7f8;
+    left: calc(50% - 700px);
+    top: calc(50% - 400px);
+  }
+
+  .container {
+    width: 500px;
+    top: 55vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cloudCircle {
+    width: 300px;
+    height: 300px;
+    box-shadow: 550px 550px 90px 0px #fdf7f8;
+    left: calc(50% - 700px);
+    top: calc(50% - 500px);
+  }
+
+  .container {
+    width: 200px;
+    top: 62.5vh;
+  }
+
+  .header {
+    font-size: 2rem;
+  }
+  
+  .bio {
+    font-size: 0.5rem;
+  }
+  
+}
