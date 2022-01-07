@@ -1,0 +1,142 @@
+.balloon1 {
+  width: 8rem;
+  animation: anim 4s ease-in-out 1s infinite alternate;
+}
+
+.balloon2 {
+  width: 8rem;
+  animation: anim 4.5s ease-in-out 1s infinite alternate;
+}
+
+.balloon3 {
+  width: 8rem;
+  animation: anim 4.25s ease-in-out 1s infinite alternate;
+}
+
+.balloon4 {
+  width: 8rem;
+  animation: anim 5.25s ease-in-out 1s infinite alternate;
+}
+
+.balloon5 {
+  width: 8rem;
+  animation: anim 5s ease-in-out 1s infinite alternate;
+}
+
+.ball {
+  height: 10rem;
+  width: 100%;
+  background: rgba(11, 60, 73, .8);
+  border-radius: 80%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 5ox #aaa;
+}
+
+.ball:before {
+  content: "";
+  height: 10rem;
+  width: 8rem;
+  background: rgba(11, 60, 73, .2);
+  border-radius: 80%;
+  display: inline-block;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+}
+
+.ball2 {
+  background: rgba(255, 186, 73, 0.8);
+}
+
+.ball2:before {
+  background: rgba(248, 172, 49, 0.2);
+}
+
+.ball3 {
+  background: rgba(32, 163, 158, 0.8);
+}
+
+.ball3:before {
+  background: rgba(32, 163, 158, 0.3);
+}
+
+.ball4 {
+  background: rgba(239, 91, 91, 0.8);
+}
+
+.ball4:before {
+  background: rgba(239, 91, 91, 0.3);
+}
+
+.ball5 {
+  background: rgba(211, 192, 210, 0.9);
+}
+
+.ball5:before {
+  background: rgba(187, 170, 186, 0.1);
+}
+
+.stick {
+  content: "";
+  width: .1rem;
+  height: 150%;
+  background: rgba(50,50,50, .8);
+  display: inline-block;
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+  overflow: visible;
+}
+
+@keyframes anim {    
+  25% {
+      transform: rotate(-2deg);
+  }
+  75% {
+      transform: rotate(2deg);
+  }
+}
+
+.balloons {
+  position: fixed;
+  left: 5%;
+  top: 45vh;
+  translate: transform(-45vh, 0);
+  animation: fadeIn 2s, float 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.balloons:nth-child(2) {
+  left: 25%;
+  top: 72vh;
+}
+
+.balloons:nth-child(3) {
+  left: 45%;
+  top: 45vh;
+}
+
+.balloons:nth-child(4) {
+  left: 65%;
+  top: 72vh;
+}
+
+.balloons:nth-child(5) {
+  left: 85%;
+  top: 45vh;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0.75; }
+  to { opacity: 1; }
+}
+
+@keyframes float {    
+  0% { 
+    transform: translateY(200%); 		
+  }
+  100% { 
+    transform: translateY(0%); 
+  }
+}

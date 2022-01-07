@@ -11,14 +11,14 @@
   position: absolute;
   left:200px;
   top:150px;
-  animation: move 3s linear infinite, plane 5s linear infinite reverse;
+  animation: move 5s linear infinite, plane 5s linear infinite reverse;
 }
 
 @keyframes move {
   0% {transform: translateY(0) rotateX(0);}
-  25% {transform: translateY(-30px) rotateX(40deg);}
-  50% {transform: rotateX(0) translateY(0);}
-  75% {transform: rotateX(-40deg) translateY(30px);}
+  30% {transform: translateY(-90px) rotateX(-60deg);}
+  50% {transform: rotateX(0deg) translateY(0px);}
+  70% {transform: rotateX(-60deg) translateY(-90px);}
   100% {transform: rotateX(0) translateY(0);}
 }
 
@@ -94,4 +94,3 @@
 }
 
 /* from https://lenadesign.org/2020/04/21/css-paper-plane-animation/ */
-

@@ -4,14 +4,15 @@ import { useDrag } from 'react-use-gesture';
 import styles from './styles/cards.module.css';
 import About from './about.js';
 import Experiences from './experiences.js';
+import Skills from './skills.js';
+import Contact from './contact.js';
 
 const cards = [
-  'https://upload.wikimedia.org/wikipedia/en/f/f5/RWS_Tarot_08_Strength.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/5/53/RWS_Tarot_16_Tower.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/9/9b/RWS_Tarot_07_Chariot.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/d/db/RWS_Tarot_06_Lovers.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/d/de/RWS_Tarot_01_Magician.jpg',
+  'https://upload.wikimedia.org/wikipedia/commons/5/53/RWS_Tarot_16_Tower.jpg',
+  'https://upload.wikimedia.org/wikipedia/commons/9/9b/RWS_Tarot_07_Chariot.jpg',
+  'https://upload.wikimedia.org/wikipedia/commons/3/3a/TheLovers.jpg',
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
+  'https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg',
 ]
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
@@ -116,13 +117,32 @@ export default function Cards() {
   console.log(tapped)
 
   return (
+  <div>
     <div className={styles.container}>
       <Deck cardSetter={setCard} tapSetter={setTap}/>
-      {tapped % 2 !== 0 && tappedCard == 5 && <About />}
-      {tapped % 2 !== 0 && tappedCard == 4 && <Experiences />}
-      {tapped % 2 !== 0 && tappedCard == 3 && <h1>Works</h1>}
-      {tapped % 2 !== 0 && tappedCard == 2 && <h1>Skills</h1>}
-      {tapped % 2 !== 0 && tappedCard == 1 && <h1>Contact</h1>}
+      {tapped % 2 !== 0 && tappedCard == 4 && <About />}
+      {tapped % 2 !== 0 && tappedCard == 3 && <Experiences />}
+      {tapped % 2 !== 0 && tappedCard == 2 && <h1>Works</h1>}
+      {tapped % 2 !== 0 && tappedCard == 1 && <Skills />}
+      {tapped % 2 !== 0 && tappedCard == 0 && <Contact />}
     </div>
+
+    <style jsx global>{`
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+    @import url(https://use.fontawesome.com/releases/v5.3.1/css/all.css);
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    `}</style>
+  </div>
   )
 }

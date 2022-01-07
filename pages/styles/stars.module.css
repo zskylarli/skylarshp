@@ -1,0 +1,311 @@
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling, .cover {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+}
+
+.stars {
+  animation: fadeIn 1s;
+}
+
+.cover {
+  background: lightblue;
+  animation: delay 3s;
+  animation-fill-mode: forwards;
+  z-index:-1;
+}
+
+@keyframes delay {
+  30%  {
+    opacity: 1;
+    background: #6DA8AC;
+  }
+  50% {
+    background: #CE96B6;
+  }
+  70% {
+    background: #647FCC;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.stars {
+background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+z-index:-3;
+}
+
+.twinkling{
+background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+z-index:-2;
+
+-moz-animation:move-twink-back 200s linear infinite;
+-ms-animation:move-twink-back 200s linear infinite;
+-o-animation:move-twink-back 200s linear infinite;
+-webkit-animation:move-twink-back 200s linear infinite;
+animation:move-twink-back 200s linear infinite;
+}
+
+/* email constellation */
+.email {
+  width: 320px;
+  height: 360px;
+  position: relative;
+  margin-top: 30vh;
+  margin-left: 10vw;
+  transform: rotate(65deg);
+}
+
+/* star styling */
+
+.star {
+  position: absolute;
+  box-shadow: 0 0 3px #fff;
+  border-radius: 50%;
+}
+
+.twinklestar1 {
+  width: 5px;
+  height: 6px;
+  right: 16%;
+  top: 45%;
+  background: #b6c8ff;
+  -webkit-animation: twinkle 0.5s alternate infinite;
+          animation: twinkle 0.5s alternate infinite;
+  -webkit-animation-delay: 1.61404s;
+          animation-delay: 1.61404s;
+}
+
+.twinklestar2 {
+  right: 32%;
+  top: 84.5%;
+  width: 4px;
+  height: 4px;
+  background: #f4ccbf;
+  -webkit-animation: twinkle 0.5s alternate infinite;
+          animation: twinkle 0.5s alternate infinite;
+  -webkit-animation-delay: 4.09091s;
+          animation-delay: 4.09091s;
+}
+
+.twinklestar3 {
+  background: #f4ccbf;
+  width: 3px;
+  height: 3px;
+  left: 30%;
+  top: 97%;
+  -webkit-animation: twinkle 0.75s alternate infinite;
+          animation: twinkle 0.75s alternate infinite;
+  -webkit-animation-delay: 1.77143s;
+          animation-delay: 1.77143s;
+}
+
+.twinklestar4 {
+  width: 5px;
+  height: 5px;
+  left: 53%;
+  top: 16.8%;
+  background: #b6c8ff;
+  -webkit-animation: twinkle 0.5s alternate infinite;
+          animation: twinkle 0.5s alternate infinite;
+  -webkit-animation-delay: 1.55357s;
+          animation-delay: 1.55357s;
+}
+
+.twinklestar5 {
+  background: #f4aaaa;
+  width: 4px;
+  height: 4px;
+  left: 107%;
+  top: 7%;
+  -webkit-animation: twinkle 0.75s alternate infinite;
+          animation: twinkle 0.75s alternate infinite;
+  -webkit-animation-delay: 0.88462s;
+          animation-delay: 0.88462s;
+}
+
+.twinklestar7 {
+  background: #b6c8f9;
+  width: 3px;
+  height: 3px;
+  left: 121%;
+  bottom: 18%;
+  -webkit-animation: twinkle 0.75s alternate infinite;
+          animation: twinkle 0.75s alternate infinite;
+  -webkit-animation-delay: 0.03279s;
+          animation-delay: 0.03279s;
+}
+
+/* line styling */
+
+.line {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  background: rgba(246,218,230,0.65);
+  -webkit-animation: line 7s alternate infinite;
+          animation: line 7s alternate infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.line1 {
+  height: 215px;
+  transform: rotate(-10deg);
+  top: 21.5%;
+  left: 60.2%;
+}
+
+.line2 {
+  height: 105px;
+  transform: rotate(-42deg);
+  top: 17%;
+  left: 68.5%;
+}
+
+.line3 {
+  height: 119px;
+  transform: rotate(20deg);
+  top: 49%;
+  left: 75.5%;
+}
+
+.line4 {
+  height: 150px;
+  transform: rotate(260deg);
+  top: -10%;
+  left: 82%;
+}
+
+.line6 {
+  height: 150px;
+  transform: rotate(260deg);
+  top: 64.5%;
+  left: 94%;
+}
+
+.line7 {
+  height: 250px;
+  transform: rotate(170deg);
+  top: 10.5%;
+  left: 115.8%;
+}
+
+/* triangle constellation */
+.triangle {
+  width: 320px;
+  height: 360px;
+  position: relative;
+  margin-top: -30vh;
+  margin-left: 60vw;
+  transform: rotate(-85deg);
+}
+
+/* star styling */
+
+.trianglestar1 {
+  width: 8px;
+  height: 8px;
+  right: 18%;
+  top: 47.5%;
+  background: #b6c8ff;
+  -webkit-animation: twinkle 0.5s alternate infinite;
+          animation: twinkle 0.5s alternate infinite;
+  -webkit-animation-delay: 1.61404s;
+          animation-delay: 1.61404s;
+}
+
+.trianglestar2 {
+  right: 67%;
+  top: 107.5%;
+  width: 7px;
+  height: 7px;
+  background: #f4ccbf;
+  -webkit-animation: twinkle 0.5s alternate infinite;
+          animation: twinkle 0.5s alternate infinite;
+  -webkit-animation-delay: 4.09091s;
+          animation-delay: 4.09091s;
+}
+
+.trianglestar4 {
+  width: 5px;
+  height: 5px;
+  left: 31%;
+  top: 14.8%;
+  background: #b6c8ff;
+  -webkit-animation: twinkle 0.5s alternate infinite;
+          animation: twinkle 0.5s alternate infinite;
+  -webkit-animation-delay: 1.55357s;
+          animation-delay: 1.55357s;
+}
+
+
+/* line styling */
+
+.triangleline1 {
+  height: 320px;
+  transform: rotate(0deg);
+  top: 17.5%;
+  left: 30.2%;
+}
+
+.triangleline2 {
+  height: 175px;
+  transform: rotate(-55deg);
+  top: 7%;
+  left: 56.5%;
+}
+
+.triangleline3 {
+  height: 240px;
+  transform: rotate(35deg);
+  top: 45%;
+  left: 58.5%;
+}
+
+
+/* the keyframes! */
+
+@keyframes twinkle {
+  0% {
+    opacity: .45;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes line {
+  0% {
+    opacity: .5;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
