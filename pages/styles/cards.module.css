@@ -18,6 +18,7 @@
   align-items: center;
   justify-content: center;
   touch-action: none;
+  z-index: 100;
 }
 
 .deck > div {

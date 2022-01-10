@@ -103,9 +103,30 @@
   left: 5%;
   top: 45vh;
   translate: transform(-45vh, 0);
-  animation: fadeIn 2s, float 2s ease-out;
+  animation: fadeIn 5s, float 5s ease-out;
   animation-fill-mode: forwards;
 }
+
+.balloons:focus, .balloons:hover {
+  animation: pop 10s none;
+}
+
+@keyframes pop {
+  2% {
+    transform: scale(1.1);
+  }
+  5% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .balloons:nth-child(2) {
   left: 25%;
@@ -138,5 +159,67 @@
   }
   100% { 
     transform: translateY(0%); 
+  }
+}
+
+.exp1 {
+  position: absolute;
+  width: 18vw;
+  left: 1.5%;
+  top: 45vh;
+  font-size: small;
+  text-align: center;
+  animation: opacityOn 5s normal forwards;
+}
+
+.exp2 {
+  position: absolute;
+  width: 18vw;
+  left: 21.5%;
+  top: 72vh;
+  font-size: small;
+  text-align: center;
+  animation: opacityOn 5s 1 forwards;
+}
+
+.exp3 {
+  position: absolute;
+  width: 16vw;
+  left: 42.5%;
+  top: 45vh;
+  font-size: small;
+  text-align: center;
+  animation: opacityOn 5s 1 forwards;
+}
+
+.exp4 {
+  position: absolute;
+  width: 18vw;
+  left: 61.5%;
+  top: 72vh;
+  font-size: small;
+  text-align: center;
+  animation: opacityOn 5s 1 forwards;
+}
+
+.exp5 {
+  position: absolute;
+  width: 15vw;
+  left: 82.5%;
+  top: 45vh;
+  font-size: absolute;
+  text-align: center;
+  animation: opacityOn 5s 1 forwards;
+}
+
+@keyframes opacityOn {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
   }
 }

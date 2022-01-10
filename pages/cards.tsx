@@ -122,9 +122,9 @@ export default function Cards() {
       <Deck cardSetter={setCard} tapSetter={setTap}/>
       {tapped % 2 !== 0 && tappedCard == 4 && <About />}
       {tapped % 2 !== 0 && tappedCard == 3 && <Experiences />}
-      {tapped % 2 !== 0 && tappedCard == 2 && <h1>Works</h1>}
-      {tapped % 2 !== 0 && tappedCard == 1 && <Skills />}
-      {tapped % 2 !== 0 && tappedCard == 0 && <Contact />}
+      {tapped % 2 !== 0 && tappedCard == 2 && <Skills />}
+      {tapped % 2 !== 0 && tappedCard == 1 && <Contact />}
+      {tapped % 2 !== 0 && tappedCard == 0 && <h1></h1>}
     </div>
 
     <style jsx global>{`

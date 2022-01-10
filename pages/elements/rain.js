@@ -5,6 +5,7 @@ export default function Rain() {
 
   return(
   <div>
+    <div className={styles.cover}></div>
     <div className={styles.rains}>
     
       <span></span>

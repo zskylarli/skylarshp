@@ -1,20 +1,20 @@
 .umbrella {
   position: absolute;
-  top: 70vh;
+  top: 60vh;
   left: 25%;
   transform: translateX(-50%);
 } 
 
 .umbrella:nth-child(2) {
   position: absolute;
-  top: 70vh;
+  top: 60vh;
   left: 50%;
   transform: translateX(-50%);
 } 
 
 .umbrella:nth-child(3) {
   position: absolute;
-  top: 70vh;
+  top: 60vh;
   left: 75%;
   transform: translateX(-50%);
 } 
@@ -25,7 +25,6 @@
   width:5px;
   height:120px;
   top:-50px;
-  z-index:5;
 }
 
 .panel:before {
@@ -34,11 +33,11 @@
   top:20px;
   left:-97px;
   width:200px;
-  height: 350px;
-  background-color: #333333;
-  opacity:0.1;
+  height: 400px;
+  background-color: #2C4C5B;
+  opacity:1;
   transition: .2s ease;
-  transition-delay: .05s;
+  z-index: -1;
 }
 
 .panel:after {
@@ -68,7 +67,7 @@
 
 .stick {
   position: absolute;
-  background-color: #333;
+  background-color: rgb(41, 41, 41);
   width:5px;
   height:20px;
   border-radius: 20px 20px 0 0;
